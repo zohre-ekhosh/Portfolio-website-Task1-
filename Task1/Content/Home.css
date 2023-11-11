@@ -1,0 +1,365 @@
+:root {
+    --primaryColor : rgb(232, 63, 33);
+    --onPrimaryColor : #FFFFFF;
+    --onPrimaryContainer : #261F22;
+    --surfaceColor : #F1ECE8;
+
+    --penumbraShadow : 0px 6px 30px 5px rgba(0, 0, 0, 0.12);
+
+    --fontSize35 : 35px;
+    --fontSize30 : 30px;
+    --fontSize22 : 22px;
+    --fontSize21 : 21px;
+    --fontSize20 : 20px;
+    --fontSize18 : 18px;
+    --fontSize16 : 16px;
+    --fontSize14 : 14px;
+    --fontSize12 : 12px;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url("vazir-fonts/fonts/Vazir.eot");
+    src: url("vazir-fonts/fonts/Vazir.woff") format("woff"),
+    url("vazir-fonts/fonts/Vazir.woff2") format("woff2"),
+    url("vazir-fonts/fonts/Vazir.ttf") format("ttf");
+}
+
+body {
+    margin: 20px auto 0px auto;
+    font-family: "vazir";
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.boxSizing {
+    box-sizing: border-box;
+}
+
+.primaryText {
+    color: var(--primaryColor);
+}
+
+.onPrimaryContainerText {
+    color: var(--onPrimaryContainer);
+}
+
+.font35 {
+    font-size: var(--fontSize35);
+}
+
+.font30 {
+    font-size: var(--fontSize30);
+}
+
+.font22 {
+    font-size: var(--fontSize22);
+}
+
+.font21 {
+    font-size: var(--fontSize21);
+}
+
+.font20 {
+    font-size: var(--fontSize20);
+}
+
+.font18 {
+    font-size: var(--fontSize18);
+}
+
+.font16 {
+    font-size: var(--fontSize16);
+}
+
+.font14 {
+    font-size: var(--fontSize14);
+}
+
+.font12 {
+    font-size: var(--fontSize12);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.myFlexBox {
+    display: flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;        
+    text-align: center;
+}
+
+.myFlexBoxWithoutColumn {
+    display: flex;
+    padding: 32px 0px;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.filledBotton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 24px;
+    gap: 10px;
+
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: var(--primaryColor);
+    color: var(--onPrimaryColor) !important;
+    
+}
+
+.filledBotton:hover {
+    background: linear-gradient(120deg, rgb(232, 63, 33) 0%, rgb(214, 58, 30) 100%);
+    box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+    transform: translateY(-1px);
+} 
+
+.textButtonIcon {
+    display: flex;
+    padding: 12px 16px 12px 12px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    text-decoration: none;
+}
+
+.textButtonIcon:hover {
+    transform: translateY(-1px);
+}
+
+
+.socialMedia {
+    display: flex;
+    align-items: center;
+    padding: 24px 0px;
+    gap: 10px;
+}
+
+.socialMedia a img {
+    width: 24px;
+}
+
+.socialMedia a img:hover {
+    transform: translateY(-1px);
+}
+
+
+#header {
+    width: 1200px;
+    height: 56px;
+    margin: auto;
+}
+
+    #header #logo {
+        display: block;
+        width: 378px;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    }
+
+        #header #logo a img {
+            height: 83px;
+        }
+
+    #header .socialMedia {
+        width: 378px;
+        height: 100%;
+    }
+
+    #header #menu {
+        width: 416px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: auto 10px;
+        gap: 32px;  
+    }
+
+        #header #menu a {
+            color: var(--primaryColor);
+        }
+
+        #header #menu a:hover {
+            color: rgb(214, 58, 30) ;
+        }
+
+
+#heroSection {
+    position: relative;
+}
+
+    #heroSection img {
+        width: 100%;
+       
+    }
+    
+    #heroSection #heroSectionText {
+        position: absolute;
+        top: 24%;
+        right: 13%;
+        gap: 16px;
+    }
+
+        #heroSection #heroSectionText a {
+            color: var(--primaryColor);
+        }
+
+            #heroSection #heroSectionText a img {
+                width: 32px;
+            }
+
+
+#appSection {
+    margin: 56px auto;
+}
+
+    #appSection #appLogo {       
+        display: flex;
+        padding: 32px 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+        #appSection #appLogo img {
+            width: 8%;
+        }
+
+        #appSection #appLogo #figmaLogo {
+            width: 6%;
+        }
+
+
+#myWorkSection {
+    width: 1200px;
+    margin: auto;
+    gap: 40px;
+}
+
+    .myWork {
+        margin: 5px auto 240px auto;
+    }
+
+    #myWorkSection .myWork img {
+        width: 710px;
+        margin: -330px auto;
+
+        border-radius: 40px;
+        box-shadow: var(--penumbraShadow);
+    }
+
+    #myWorkSection .myWork .rect {
+        width: 980px;
+        height: 480px;
+
+        border-radius: 40px;
+    }
+
+
+    #myWorkSection .myWork .rect .myWorkText {
+        width: 333px;
+        margin: 11% 9%;
+
+        gap: 16px;
+    }
+
+    #myWorkSection #myWork1 .rect {
+        background-color: #C0AB96;
+    }
+
+        #myWorkSection #myWork1 .rect .myWorkText h3 {
+            color: var(--primaryColor);
+        }
+
+    #myWorkSection #myWork2 .rect {
+        background-color: #A3D374;
+    }
+
+        #myWorkSection #myWork2 .rect .myWorkText h3 {
+            color: #7C83BF;
+        }
+
+        #myWorkSection #myWork2 .rect .myWorkText a {
+            background-color: #7C83BF;
+        }
+
+        #myWorkSection #myWork2 .rect .myWorkText a:hover {
+            background: linear-gradient(120deg, #7C83BF 0%, #4c68a3 100%);
+            box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+
+    #myWorkSection #myWork3 .rect {
+        background-color: #6DB4CA;
+    }
+
+        #myWorkSection #myWork3 .rect .myWorkText h3 {
+            color: #024E65;
+        }
+
+        #myWorkSection #myWork3 .rect .myWorkText a {
+            background-color: #024E65;
+        }
+
+        #myWorkSection #myWork3 .rect .myWorkText a:hover {
+            background: linear-gradient(120deg, #024E65 0%, #023f52 100%);
+            box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+            transform: translateY(-1px);
+        }
+
+
+#footer {
+    width: 100%;
+    height: auto;
+    gap: 32px;
+
+    border-radius: 40px;
+    background-color: var(--surfaceColor);
+}
+
+    #footer #footerLogo {
+        width: 88px;
+        margin: -30px auto;
+    }
+
+    #footer #footerText {
+        width: 600px;
+        margin: 40px auto 0px auto;
+    }
+
+    #footer #privacy {
+        width: 100%;
+        height: auto;
+
+        border-radius: 0px 0px 40px 40px;
+        background-color: var(--primaryColor);
+    }
+
+
+
